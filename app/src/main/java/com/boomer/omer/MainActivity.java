@@ -129,8 +129,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             fileDataFragment.updateData(mostRecent);
             extDataFragment.updateData(mostRecent);
 
-            if (mostRecent.isDone == 1) {shareButton.setVisibility(View.VISIBLE);startButton.setText(getResources().getString(R.string.button_start));
-            }else{shareButton.setVisibility(View.INVISIBLE);startButton.setText(getResources().getString(R.string.button_restart));}
+            if (mostRecent.isDone == 1) {shareButton.setVisibility(View.VISIBLE);//startButton.setText(getResources().getString(R.string.button_start));
+            }else{shareButton.setVisibility(View.INVISIBLE);}//startButton.setText(getResources().getString(R.string.button_restart));}
 
             percView.setText("Total:" + mostRecent.totalMB + "MBs");
             avgView.setText("Avg:" + (float) mostRecent.averageFileSize + "MBs");
